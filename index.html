@@ -114,7 +114,7 @@
 			document.getElementById("suc").innerHTML = "购买成功！<a href = 'javascript:void(0)'>查看号码（购买量较大请勿点击）</a>"
 			document.getElementsByTagName("a")[0].onclick = function(){
 				for(var i = 0;i < res.length;i++){
-					document.getElementById("detail").innerHTML = document.getElementById("detail").innerHTML+(i+1)+":&nbsp;&nbsp;"+res[i].join("==")+"<br /><br />"
+					document.getElementById("detail").innerHTML = document.getElementById("detail").innerHTML+(i+1)+":&nbsp;&nbsp;"+res[i].join(",")+"<br /><br />"
 				}
 				document.getElementById("detail").style.display = "block";
 			}
